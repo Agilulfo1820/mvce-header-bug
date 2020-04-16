@@ -24,9 +24,12 @@ export default class FirstScreen extends React.Component {
                         
                     </Right>
                 </Header>
-                <Content bounces={false}>
+                <Content>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <Text>First Screen</Text>
+                    </View>
+                    <View style={{ flex: 1, alignItems: 'center', paddingTop: 100 }}>
+                        <Text onPress={() =>  this.props.navigation.navigate('SecondScreen')}>Go to second screen of the stack</Text>
                     </View>
                 </Content>
             </Container>

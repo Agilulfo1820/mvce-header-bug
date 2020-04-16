@@ -1,32 +1,59 @@
 import React from 'react';
 import { Text } from 'react-native';
 import { createSwitchNavigator, createAppContainer } from 'react-navigation'
+import {createStackNavigator} from 'react-navigation-stack'
 import {createBottomTabNavigator} from 'react-navigation-tabs'
 import {View, Root, StyleProvider} from 'native-base'
 import getTheme from './native-base-theme/components'
 import platform from './native-base-theme/variables/platform'
 
 //Screens
-import FirstScreen from './components/FirstScren'
+import FirstScreen from './components/FirstScreen'
 import SecondScreen from './components/SecondScreen'
+import ThirdScreen from './components/ThirdScreen'
+import FourthScreen from './components/FourthScreen'
+
+const FirstStack = createStackNavigator({
+  FirstScreen: {
+    screen: FirstScreen
+  },
+  SecondScreen: {
+    screen: SecondScreen
+  }
+},
+  {
+    headerMode: 'none'
+  })
+
+const SecondStack = createStackNavigator({
+  ThirdScreen: {
+    screen: ThirdScreen
+  },
+  FourthScreen: {
+    screen: FourthScreen
+  }
+},
+  {
+    headerMode: 'none'
+  })
 
 // Configurations and options for the AppTabNavigator
 const configurations = {
-  FirstScreen: {
-    screen: FirstScreen,
+  FirstStack: {
+    screen: FirstStack,
     navigationOptions: {
-      tabBarLabel: 'FirstScreen',
+      tabBarLabel: 'FirstStack',
       tabBarIcon: () => (
-        <Text>FirstScreen</Text>
+        <Text>FirstStack</Text>
       )
     }
   },
-  SecondScreen: {
-    screen: SecondScreen,
+  SecondStack: {
+    screen: SecondStack,
     navigationOptions: {
-      tabBarLabel: 'SecondScreen',
+      tabBarLabel: 'SecondStack',
       tabBarIcon: () => (
-        <Text>SecondScreen</Text>
+        <Text>SecondStack</Text>
       )
     }
   },
