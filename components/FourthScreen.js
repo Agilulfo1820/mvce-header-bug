@@ -26,7 +26,7 @@ export default class FourthScreen extends React.Component {
 
                     </Right>
                 </Header>
-                <Content bounces={false}>
+                <Content>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <Text>Fourth Screen</Text>
                     </View>

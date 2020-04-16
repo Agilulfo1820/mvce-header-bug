@@ -26,7 +26,7 @@ export default class SecondScreen extends React.Component {
 
                     </Right>
                 </Header>
-                <Content bounces={false}>
+                <Content>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <Text>Second Screen</Text>
                     </View>

@@ -24,11 +24,11 @@ export default class ThirdScreen extends React.Component {
                         
                     </Right>
                 </Header>
-                <Content bounces={false}>
+                <Content>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <Text>First Screen</Text>
                     </View>
-                    <View style={{ flex: 1, alignItems: 'center', paddinTop:100 }}>
+                    <View style={{ flex: 1, alignItems: 'center', paddingTop:100 }}>
                         <Text onPress={() =>  this.props.navigation.navigate('FourthScreen')}>Go to fourth screen of the stack</Text>
                     </View>
                 </Content>
