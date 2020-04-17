@@ -17,5 +17,5 @@ expo start -c
 ```
 
 ### Bug description
-The upper header is blu on the screens where I am using the <Header /> component.
+The upper header is blu on the screens where I am using the `<Header />` component.
 Strange thing is that if I go from First Screen or Third Screen (without any Header component), where the header is transparent, to the Second or Fourth Screen (with Header component), where the header becomes blue, then when I go back to First or Third Screen there's a header and it's black.
