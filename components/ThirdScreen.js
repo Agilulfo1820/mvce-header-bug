@@ -10,20 +10,6 @@ export default class ThirdScreen extends React.Component {
     render() {
         return (
             <Container style={{ backgroundColor: '#fff' }}>
-                <Header transparent>
-                    <Left style={{ flex: 1 }}>
-                        
-                    </Left>
-                    <Body style={{ flex: 2 }}>
-                        <Title style={{
-                            alignSelf: "center",
-                            color: '#000'
-                        }}>Third Screen Title</Title>
-                    </Body>
-                    <Right style={{ flex: 1 }}>
-                        
-                    </Right>
-                </Header>
                 <Content>
                     <View style={{ flex: 1, alignItems: 'center' }}>
                         <Text>First Screen</Text>
